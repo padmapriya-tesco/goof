@@ -5,6 +5,8 @@ var typeorm = require("typeorm");
 var router = express.Router()
 module.exports = router
 
+
+
 router.get('/', async (req, res, next) => {
 
   const mongoConnection = typeorm.getConnection('mysql')
